@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     public void StartMove(List<Vector3> path)
     {
+        if (IsMoving) return;
         _path = path;
         IsMoving = true;
     }
